@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Flash Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/index-BykCnYzk.css">
+  </head>
+
+  <body>
+    <header>  
+      <nav class="container">
+        <div class="nav-left-side">
+          <svg
+            width="17"
+            height="26"
+            viewBox="0 0 17 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.309 2.90741C10.309 2.90741 4.29997 8.73841 2.526 13.9214C2.40313 14.2804 2.73267 14.6124 3.10045 14.5192L13.2394 11.9481C13.9358 11.7715 14.5723 12.3638 14.368 13.0525C12.9552 17.8149 8.62911 23.5897 8.62911 23.5897"
+              stroke="#A259FF"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="/">Javascript Flash Course</a>
+        </div>
+        
+        <div class="nav-right-side">
+          <button id="open-nav-menu">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+  
+          <div class="wrapper">
+            <ul>
+              <li>
+                <button id="close-nav-menu">
+                  <svg
+                    width="47"
+                    height="47"
+                    viewBox="0 0 47 47"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7505 11.7495L35.2505 35.2495"
+                      stroke="#A259FF"
+                      stroke-width="6"
+                    />
+                    <path
+                      d="M35.2502 11.7502L11.7502 35.2502"
+                      stroke="#A259FF"
+                      stroke-width="6"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+              <li class="socials">
+                <p>Join our community</p>
+  
+                <div>
+                  <a href="#">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANESURBVHgB7VZbVuJAEO3OIL/iCoQVDK7AzAqQFRhXoPPL44AHor+6AnEFgyuYsAJ1BTIrGPwkYHpudVe0ExpUDv6M1jkhpB+3bldV324hvuyzm3zLoDAMq3jtJ0nyp91uD1eN7fV6vud53/F31Gw278S6BAhISlmTUgT4LKXtSomfrVbrQjiJ9rqA7Ly0qDF+ojien8LGrjmeGygMPE/+hvMT41xistQrR1tHLFuN9A6ZZATyNKeMJygWtx76/f7JmwkA4piBLgDqI5QVPHU0TYgQRSc/g9qUUmVaNSL0o9FoVuB8D8+AiddcnhZScH5+Xk6Spwdy1my2dqit0+mUisXiAROrpkRyU7lNjZNEdOfz+YjCbuZuEV4pjmc7aJusjAAKzWduEf1SXgHwF8BX7Fw4nFttsoz0DdKws0NdjFjEYX5SwQFUYyI650rJCcI3QTrukNchwjwmwNls9mivBs52Uf1l9BNJHzPxiG0mNTTfClEUl7azhRSEYV/RG+GqLKvc9xqnAVEUE8Z9Jp5JAQqJGOoq3pRzMnYY4SkVCoWq3ZchgBDq8FOoxYaNFsXYtaUEkGuf/47ExgmoEfsInARIbtN9/BYJfa9BwiPh0BE7Avv8jpaBkEJi8uG6/Vj9wLzlvoOA4gJ055/ASQtoj7ucvNZP9vSkbpiInyFA6ieEaYSM3ogPMqgjpZbS4NPWfCZgqd/S6kddDNB/lCQqQD6v39tP5lLFVAkz6reaxPr9xrKqyAS0bFKIFrYfn/HHfDZEIHmPcWNbqDicWmSgJbsMjl0lTvN3hziOr6GK1KYFKY0AgVXR8QtgdRucz4ISgx6gyBC+LZJs4TZlf2zbH3zSXvE4Lce6BjzvW91cIDSJW7NqY7QC9NPZfvQCpcfm7KUNd4iAjl7MPU0jRJhwfivMQYWxXl2PzbJLcNtRATMkwAgDL0mY0m1mhKpdEQ47OwsfSMzSQjT3Q3JIKTTHNcn8dBofpQeSXAQ5o8tn196rhozUeV5V5TZJREEYZWUEnAWoj26j0cjU2dJLKd+Ej4mIBXSHW9KeWGGoDQpzeuLRPWIAx8O841cJ5MkgdNvT6fQ+f6VyGUURpB8/4kz5sv/P/gFlgL+iKN1IwAAAAABJRU5ErkJggg=="
+                      alt="Discord logo"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK/SURBVHgB7VbRcdpAEN0TAvMXpQLLFUA6wBXYHYQOEn8ixGAGBJ92CZRAKgiuIKIC5ApC/hgDuryV7oRiHCEZGP/wZtDp9k57b5e93SU644wPhsha7Ha7dqVSaUgpL4WQNpFhEUlbCGHxOuR2pESIQM0XGPCTgZQCPzkzDCNot9t+bgL9fr9hGPQVS7eYWnQcMKlJGNKPTqcz+S8Bz+s/QvQttRzg4cOSAJb4YRguYO0z5r951XXdZx4Hg8Elj9hjqw9t7GVP1YWguvZUpFHQo+O4dzsEYsvFT2YrJYEIjfUBh2I0GjGhBrzwgKkVhvIanpjymqk3gX0NG4hd5bqdHh0RrVYrwDAeDgc1GPc9Poum0bmpfQ1+IHgmdCJA94xHeKOuZWZqOQo4sFvsUzQcenMpQ3p5WV/3er2AcgIHI5YEzhAJgcQDCBhbb9qnKA4qgStaniNw7yknTNMMlAZrhwCURsLVavWHCkF0QWLOOWPfzuVyqbwrdgmQuvNw6d6/IPnYKF3FSSifN1K63yRQGBzdjtO+QmTfx5LYGwVUHEaAAddbSNOf6Z04iAAnr4uLyi+dPTmB4WZ8KaIjdQ05X5PFFuWNA86cCF4+OhCi1Gy3naes/aw7dVasQ78gmCJhuVz+RAWgrXac7MMZ1WpVEZAJAXOrKBaqgpJZAzjyORHlsTqN9XptcyLiUr1DAGpRs2V9s9nYmGQq5cin9yHygPY2Ix2Evlqs04kA796o16mWJR5ACp6xe1Cvm4huH+56KpLnsxB3VmYTHuYmh41MOqR/GhKUywcul1uJDMCbGxKfGxFdJ0AuGjVBnYbRvlnciMBSC9/UuL68bkg4aNFn3L1JgIHu5gYf3iq2R2vJ0IRMSqXS+PVtyWxKPc9j9txuRVYoi6xtMdGW6ajmmyQC1bpxG8fv02N1VmeccRL8BRTiTApCa7zpAAAAAElFTkSuQmCC"
+                      alt="Youtube logo"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALqSURBVHgB7VZdUuJAEO4ZFV/dG8QTrJ7AeAP3BMIJ1EdJKMJC8FE9AXgCuQF4guUG5Ag8B5jZrzPJAiEMYd2qLav4HpJJ5qe/nv66Z4gOOOA/Q9A/QLPZPKtUju+x3BU+3fT3WCn90mg03mgfAt1uONFaURzPr1utVkQ78PT05Ci1eEfzoniEjmxrydUP9kRr7YCXA4+G+HZoB0B2aIzrSAjpxvHsm+f5Qmu6EUJEK2udFc1f24F2u+1KKYbrBujB9/2XoslhGFYxopd6eQkvp3mHTk8rv4xTG9Qjz2ucSyr0ikZCUGIU7+cw7GzZDX3HT6UoyBtn8L/FQtXIgjUCUkrHENBRve4/wHzNbCO5lcrJJAzbvRyRJO42oaFvxCGR8ug8XYsyXWwQUEpFxmvh8NvzvD7iioGib0aIqiESviNct1QSLFTWignFuijzOzA1BJYxe3x8RKy8GnuwJKJvoJU+lcQ24xsE4jhOO4STV22OCOIqBvg95UXJgmVm0bQoHTfqAAsOLxdF5JrjR5/ESmaNoYXLfP9GFnAGJB2SSsfYBoT1u2llAtxBYDabvaYTqmUKUQm4/IDAB1SGgMlnIzAovkefAKufBcvt+Xz+QWUIJD+lbFEiMHI7nc49/SWUmldNSwxKnQUZWPGY9JBMRSXcJ+czsPeoIbdmDfGybZzc1sFFCIIMkkHIeVTBgPYAYt5Mc79fr9c/9ibAwCHUykjAjyZITKgEul0Om66Syf2WbayVQEYCrxGVRBj+rIL0s/kSwa47xbGt09x0Tviy4VJayWzj2fPMOO+c73uvtANbCUB4N0dH8jmr4disH9u8Sa9kAYzeLY371q3PUFCKk0sGq9dNFxuhONWKjK/cBdkwnx1cQwIIeKfnGQp2QK8UHzGYzeJadtkwBisOmldpgblIDVuJ2rCxAyg8TeR+QCXBhlG4Aluq7UWAwUVksVjwtl6AzB8vyVTHCCflGEbHOL7fiq5iB3wp/AbVx5Ej7PeoXQAAAABJRU5ErkJggg=="
+                      alt="Twitter logo"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKxSURBVHgB7VfbcdpAFL0rBPySDkgFwRVYdEAJdgWRP0EwwgOCz+AKTCqIUwGkApMO1EH8y8Pa3CPthsdIoBVk7A+fGaSVZnXvuc+9EH3gjSFObRgMBo5lWV+klDUygBDiJYqi371eb350Hx1VLHxeOnQWZBhFdJtFJJXAaDR0paRv6pEtkU9sUUgG4P11Ichhz9VjGpLuut3u5CQBZflMfTRZr9f3jBcqiOFw6DORPtZsSPPQE9bhB6WS9aiU95nx3TnKAZZxzwRiy1VIKZMArE9cJkN8SAURBIN+EAwl7nheLteQBUMc6MgkgGxXyzmdBW1pck+8KJ4OdMSwdx9QauwuvmcnnO/7tUrFdlngNW0rZMHxnXB8vydyqI+4474jO0xk75ezTQYYj8d1KaOZzuwdNDi+U7h8tdo0VfhyhdAiA2yVwxrLWa3WnzyvK9jSVlKmos7emcFLeWXmJhAEwY1WzlZedTqdX7pC2OKfy+XqSpMol8tf88o18ICMhXJ+uGmliXevr9Et1mhAlBMmIWjgAmuzNmw2m4VaOvQfCMQ4Ft8iTcuEwBwX27YbWRu4ybTUckGXJsCZPo8/sOgxzQt4x208PsDQEygnchPgQ+lhp9SetbVQjPZarVaedZXohnRRAogv135Tk+DG8wP9vlIp/8HpuVOiTTKAURK22+2w0/E+MwGU2784Izxou+gPTDQkA+y1YoxRLI5SWu0ePM+b8m1KBsCAAtmJji32PIAZLn5piZZJO81HIOkNTGCRSUBNK/jVqtWyTxcCDimdI2jhmQQALqH4FOOYunqgKAp4kWVM9FwgROnmcE/qUMpznMsuU0OpDPkyPzYjpEEIWCxQqiqUwuXcechFAEBtYz48lZCngArhKah/6PqTBDRGo9E1k2gU+WOChMtS/IF3g79PgloKEEn4pwAAAABJRU5ErkJggg=="
+                      alt="Instagram logo"
+                    />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="container greeting-section">
+        <div class="left-side">
+          <h1 id="greeting">Good Morning!</h1>
+          <p id="weather">The weather is cloudy in London and it's 22°C outside. </p>
+          <div class="weather-group">
+            <input type="radio" checked="true" id="celsius" name="temperature">
+            <label for="celsius">Celsius</label>
+            <input type="radio" id="fahr" name="temperature" />
+            <label for="fahr">Fahr</label>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <p>Local time:</p>
+          <div class="local-time">
+            <div class="time-holder">
+              <span data-time="hours" class="time-number">08</span>
+              <span class="time-letter">Hours</span>
+            </div>
+            <span class="time-divider">:</span>
+            <div class="time-holder">
+              <span data-time="minutes" class="time-number">25</span>
+              <span class="time-letter">mins</span>
+            </div>
+            <span class="time-divider">:</span>
+            <div class="time-holder">
+              <span data-time="seconds" class="time-number">13</span>
+              <span class="time-letter">secs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <img src="/assets/image1-r-bPrLhJ.jpg" alt="image 1" />
+
+        <div class="thumbnails">
+          
+        </div>
+      </section>
+
+      <section id="products" class="container products-section">
+        <div class="products-filter">
+          <input type="radio" checked="true" id="all" name="products" />
+          <label for="all">
+            All
+            <span class="product-amount">3</span>
+          </label>
+          <input type="radio" id="paid" name="products" />
+          <label for="paid">
+            Paid
+            <span class="product-amount">2</span>
+          </label>
+          <input type="radio" id="free" name="products" />
+          <label for="free">
+            Free
+            <span class="product-amount">1</span>
+          </label>
+
+          <span class="glider"></span>
+        </div>
+
+        <div class="products-area">
+          <div class="product-item">
+             <img src="/assets/img6-DagzxeAG.png" alt="AstroFiction">
+             <div class="product-details">
+                <h3 class="product-title">AstroFiction</h3>
+                <p class="product-author">John Doe</p>
+                <p class="price-title">Price</p>
+                <p class="product-price">$ 49.90</p>
+             </div>
+          </div>
+          <div class="product-item">
+             <img src="/assets/img1-DP3Mrjdu.png" alt="Space Odissey">
+             <div class="product-details">
+                <h3 class="product-title">Space Odissey</h3>
+                <p class="product-author">Marie Anne</p>
+                <p class="price-title">Price</p>
+                <p class="product-price">$ 35.00</p>
+             </div>
+          </div>
+          <div class="product-item">
+             <img src="/assets/img2-BLvZ-g3x.png" alt="Doomed City">
+             <div class="product-details">
+                <h3 class="product-title">Doomed City</h3>
+                <p class="product-author">Jason Cobert</p>
+                <p class="price-title">Price</p>
+                <p class="product-price">Free</p>
+             </div>
+          </div>
+          
+       </div>
+
+      </section>
+
+      <section id="faqs" class="container faqs-section">
+        <h3>Frequently Asked Questions</h3>
+
+        <details open>
+          <summary>FAQ 1</summary>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+            adipisci illum error, hic expedita numquam impedit explicabo vitae
+            iure quae vero autem quia quibusdam tempora atque harum perferendis
+            praesentium dolor!
+          </p>
+        </details>
+
+        <details>
+          <summary>FAQ 2</summary>
+
+          <p>
+            Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt
+            suscipit repudiandae cupiditate in accusantium recusandae tempora
+            sint eligendi, perferendis aspernatur architecto voluptas laborum
+            adipisci neque voluptates consequatur.
+          </p>
+        </details>
+
+        <details>
+          <summary>FAQ 3</summary>
+
+          <p>
+            Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt
+            suscipit repudiandae cupiditate in accusantium recusandae tempora
+            sint eligendi, perferendis aspernatur architecto voluptas laborum
+            adipisci neque voluptates consequatur.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
