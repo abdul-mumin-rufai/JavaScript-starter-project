@@ -1,0 +1,164 @@
+:root {
+  --background-color: #2b2b2b;
+  --light-background-color: #3b3b3b;
+  --gray-color: #cccccc;
+  --dark-gray-color: #858584;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background: var(--background-color);
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: var(--light-background-color);
+}
+
+header nav {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .nav-left-side {
+    display: flex;
+    align-items: center;
+}
+header nav .nav-left-side a {
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+
+header nav #open-nav-menu {
+    cursor: pointer;
+}
+header nav #nav-right-side {
+    display: none;
+}
+
+main .greeting-section {
+    display: flex;
+    padding-block: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .greeting-section .left-side h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 39px;
+    text-transform: capitalize;
+}
+
+main .greeting-section .left-side .p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+main .greeting-section .left-side .weather-group {
+    background: #d9d9d9;
+    border-radius: 8px;
+    width: fit-content;
+    margin-top: 15px;
+    display: flex;
+}
+main .greeting-section .left-side .weather-group input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+main .greeting-section .left-side .weather-group input[type="radio"]:checked + label {
+    color: #ffffff;
+    background: #a259ff;
+    border-radius: 8px;
+}
+
+main .greeting-section .left-side .weather-group label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--light-background-color);
+    text-transform: capitalize;
+    padding: 5px;
+    width: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .greeting-section .right-side {
+    background: #333333;
+    border-radius: 20px;
+    padding: 13px 25px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .greeting-section .right-side p {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    margin-bottom: 5px;
+}
+
+main .greeting-section .right-side .local-time {
+    display: flex;
+}
+
+main .greeting-section .right-side .local-time .time-divider,
+main .greeting-section .right-side .local-time .time-holder .time-number {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 39px;
+}
+main .greeting-section .right-side .local-time .time-divider {
+  margin-inline: 10px;
+}
+
+main .greeting-section .right-side .local-time .time-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+main .greeting-section .right-side .local-time .time-holder .time-letter {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11px;
+  text-transform: capitalize
+}
