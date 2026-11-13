@@ -3,36 +3,36 @@
     "title": "AstroFiction",
     "author": "John Doe",
     "price": 49.9,
-    "image": "./assets/products/img6.png"
+    "image": "./public/images/img6.png"
   },
   {
     "title": "Space Odissey",
-    " author": "Marie Anne",
+    "author": "Marie Anne",
     "price": 35,
-    "image": "./assets/products/img1.png"
+    "image": "./public/img1.png"
   },
   {
     "title": "Doomed City",
     "author": "Jason Cobert",
     "price": 0,
-    "image": "./assets/products/img2.png"
+    "image": "./images/img2.png"
   },
   {
     "title": "Black Dog",
     "author": "John Doe",
     "price": 85.35,
-    "image": "./assets/products/img3.png"
+    "image": "./images/img3.png"
   },
   {
     "title": "My Little Robot",
     "author": "Pedro Paulo",
     "price": 0,
-    "image": "./assets/products/img5.png"
+    "image": "./images/img5.png"
   },
   {
     "title": "Garden Girl",
     "author": "Ankit Patel",
     "price": 45,
-    "image": "./assets/products/img4.png"
+    "image": "./public/images/img4.png"
   }
 ]
